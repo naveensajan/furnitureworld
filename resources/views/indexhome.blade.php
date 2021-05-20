@@ -49,7 +49,9 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <i class="fa fa-home" aria-hidden="true" style="font-size:25px;color:red"></i>
         </ul>
-   
+        <li class="nav-item ">
+          <a class="nav-link active" href="/addadmin">HOME</a>
+        </li>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item ">
           <a class="nav-link active" href="/">HOME</a>

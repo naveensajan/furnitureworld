@@ -39,8 +39,7 @@ body {
 </head>
 
 <body > 
-@extends("themeadmin")
-@section("content")
+
 
 <div class="container">
 <div class="row">
@@ -121,6 +120,6 @@ function check(elem)
     }
 }
 </script>  
-@endsection 
+
 </body>
 </html>

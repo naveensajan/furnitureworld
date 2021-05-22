@@ -57,14 +57,14 @@ route::get('/order/{id}/edit', [productController::class,'orderedit']);
 route::post('/ordereditprocess/{id}',[productController::class,'updateorder']);
 route::get('/card', [productController::class,'card']);
 route::get('/cancelorder/{id}/{userid}', [productController::class,'cancelorder']);
-Route::get('/addadmin',[adminController::class , 'addadn' ] );
+
 
 Route::group(['middleware'=>['AuthCheck']],function()
 {
 
     Route::get('/adminlogin',[adminController::class , 'index' ] );
     Route::get('/adminhome',[adminController::class , 'create' ] );
-   
+    Route::get('/addadmin',[adminController::class , 'addadn' ] );
     Route::get('/userview',[adminController::class , 'usrview' ] );
     Route::get('/addcategory',[productController::class , 'catview' ] );
     Route::get('/productview',[productController::class , 'prodview' ] );

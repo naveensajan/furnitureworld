@@ -49,8 +49,8 @@
     <td>{{$prods->FurniturePrice}}</td>
     <td>{{$prods->FurnitureDescription}}</td>
     <td><img width="150" height="100" src="{{ URL ::asset('assets/project_img/'.$prods->pimage) }}"></td>
-    <td><a class="btn btn-warning"  href="/product/{{$prods->id}}/edit" >EDIT</a></td>
-    <td><a class="btn btn-danger"   href="/productdelete/{{$prods->id}}/deleteview">DELETE</a></td>
+    <td><a class="btn btn-outline-primary"  href="/product/{{$prods->id}}/edit" >EDIT</a></td>
+    <td><a class="btn btn-outline-danger"   href="/productdelete/{{$prods->id}}/deleteview">DELETE</a></td>
 </tr>
 
 @endforeach

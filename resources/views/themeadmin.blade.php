@@ -8,6 +8,7 @@
     <title>admin</title>
 </head>
 <body>
+<div id="hide">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Admin Panel</a>
@@ -26,13 +27,13 @@
           <a class="nav-link" href="/addadmin">Add Admin</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/addcategory">Add category</a>
+          <a class="nav-link" href="/addcategory">Add Category</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/addproduct">Add product</a>
+          <a class="nav-link" href="/addproduct">Add Product</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/productview">Product view</a>
+          <a class="nav-link" href="/productview">Product View</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/vieworders">View Orders</a>
@@ -40,8 +41,8 @@
        </ul>
       <form method="post" action="/usearch" class="d-flex">
       {{ csrf_field() }}
-        <input name="pc" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="uname">
-        <button class="btn btn-outline-info" type="submit">Search</button>
+        <input  class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="uname">
+        <button class="btn btn-outline-primary" type="submit">Search</button>
       </form>
     </div>
   </div>
@@ -118,5 +119,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>       
 </body>
 </html>
+
+</div>
 @yield("content")
 

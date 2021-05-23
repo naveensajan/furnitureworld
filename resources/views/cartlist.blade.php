@@ -38,7 +38,7 @@
       <form method="post" action="/psearch" class="d-flex">
       {{ csrf_field() }}
         <input name="pc" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"  name="FurnitureCategory">
-        <button class="btn btn-outline-info" type="submit">Search</button>
+        <button class="btn btn-outline-primary" type="submit">Search</button>
       </form>
 
     </div>
@@ -145,7 +145,7 @@
 
 </div>
 <br><br>
-<center><a href="ordernow" class="btn btn-primary">Order Now<center>
+<center><a href="ordernow" class="btn btn-outline-primary">Order Now<center>
 
 
 

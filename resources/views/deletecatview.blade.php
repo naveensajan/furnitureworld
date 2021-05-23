@@ -28,19 +28,19 @@
           <a class="nav-link" href="/addadmin">Add Admin</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/addcategory">Add category</a>
+          <a class="nav-link" href="/addcategory">Add Category</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/addproduct">Add product</a>
+          <a class="nav-link" href="/addproduct">Add Product</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/productview">Product view</a>
+          <a class="nav-link" href="/productview">Product View</a>
         </li>
        </ul>
-      <form method="post" action="/prodesearch" class="d-flex">
+      <form method="post" action="/uesearch" class="d-flex">
       {{ csrf_field() }}
-        <input name="pc" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-info" type="submit">Search</button>
+        <input  name="uname" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary" type="submit">Search</button>
       </form>
     </div>
   </div>
@@ -142,7 +142,7 @@
     <td><input type="text"  name="CategoryName" class="form-control" value="{{ $catdel->CategoryName}}"></td>
 </tr>
 <br>
-    <td><td> <button onclick="return confirm('Are you sure want to delete ?')" class="btn btn-danger"> DELETE  </button></td></td>
+    <td><td> <button onclick="return confirm('Are you sure want to delete ?')" class="btn btn-outline-danger"> DELETE  </button></td></td>
    
 </tr>
 </table>

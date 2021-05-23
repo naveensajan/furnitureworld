@@ -9,7 +9,6 @@
     <title>user</title>
 </head>
 <body>
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href=""></a>
@@ -38,7 +37,7 @@
       <form method="post" action="/psearch" class="d-flex">
       {{ csrf_field() }}
         <input name="pc" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"  name="FurnitureCategory">
-        <button class="btn btn-outline-info" type="submit">Search</button>
+        <button class="btn btn-outline-primary" type="submit">Search</button>
       </form>
 
     </div>
@@ -50,7 +49,7 @@
     <div class="container-fluid">
     
  
-        <img src="images/logo8.png" alt="" width="155" height="33" class="d-inline-block align-top">
+        <img src="images/logo8.png" alt="" width="155" height="33"  class="d-inline-block align-top">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         </ul> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -107,23 +106,29 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         
         <li class="nav-item">
-          <a class="nav-link " href="/lgout">Log Out</a>
+          <a class="nav-link " id="hide" href="/lgout">Log Out</a>
         </li>
         </ul>
     </div>
   </nav>
+  <style type="text/css">
+@media print {
+    #hide {
+        display :  none;
+    }
+}
+</style>
 <br>
 <center><h4 style="margin-bottom: 30px; font-weight: bold; color: #da2128;">My Bookings</h4></center>
-<br>
 <div class="container">
 <div class="row ">
-
+<div style="text-align:right"><button id="hide" class="btn btn-outline-primary" onclick="window.print()">Print</button></div>
 @foreach($orders as $item) 
 
 <div class="col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">
 <br>
 <img width="212" height="150" src="{{ URL ::asset('assets/project_img/'.$item->pimage) }}">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-danger btn-sm" href="/cancelorder/{{$item->id}}/{{$item->userid}}">Cancel Order</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-outline-danger btn-sm" id="hide" href="/cancelorder/{{$item->id}}/{{$item->userid}}">Cancel Order</a>
 </div>
 <br>
 <div class="col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">

@@ -36,13 +36,13 @@ body {
     
 @foreach($cat as $categorys)
 
-<tr class="table-primary">
+<tr class="table-secondary">
    
     <td>{{$categorys->CategoryId}}</td>
   
     <td>{{$categorys->CategoryName}}</td>
 
-    <td><a class="btn btn-sm btn-danger"   href="/category/{{$categorys->id}}/delete">DELETE</a></td>
+    <td><a class="btn btn-sm btn-outline-danger"   href="/category/{{$categorys->id}}/delete">DELETE</a></td>
                                     
    
 </tr>

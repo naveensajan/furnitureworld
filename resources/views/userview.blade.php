@@ -50,7 +50,7 @@
      <td>{{$userf->usmob}}</td>
      <td>{{$userf->ugend}}</td>
     
-     <td>  <a class="btn btn-danger" href="/user/{{$userf->id}}/delete"  > Delete  </a>  </td>
+     <td>  <a class="btn btn-outline-danger" href="/user/{{$userf->id}}/delete"  > Delete  </a>  </td>
     
  </tr>
  

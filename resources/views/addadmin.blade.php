@@ -84,7 +84,7 @@ body {
   <tr><td></td> <td> <span class="text-danger" id="alert"> </span></td> </tr>
  <tr>
  <td></td>
-     <td><button class="btn btn-primary btn-md" >Submit</button></td>
+     <td><button class="btn btn-outline-primary btn-md" >Submit</button></td>
  </tr>
  </table>
 

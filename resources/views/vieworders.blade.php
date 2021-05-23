@@ -19,14 +19,19 @@
 
 @extends("themeadmin")
 @section("content")
-
-<br>
+<style type="text/css">
+@media print {
+    #hide {
+        display :  none;
+    }
+}
+</style>
 <div class="container">
 <div class="row">
 <div class="col col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 ">
  </div>
  <div class="col col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8 ">
- 
+ <br>
  <table class="table  table-success table-striped">
 <tr><th>Order Id</th>
     <th >Product Id</th>
@@ -47,14 +52,16 @@
     <td>{{$prods->address}}</td>
     <td>{{$prods->status}}</td>
     <td>{{$prods->paymentmethod}}</td>
-    <td><a class="btn btn-warning"  href="/order/{{$prods->id}}/edit" >UPDATE</a></td>
-    <td><a class="btn btn-danger"   href="/orderdelete/{{$prods->id}}/deleteview">DELETE</a></td>
+    <td><a id="hide" class="btn btn-outline-success"  href="/order/{{$prods->id}}/edit" >UPDATE</a></td>
+    <td><a id="hide" class="btn btn-outline-danger"   href="/orderdelete/{{$prods->id}}/deleteview">DELETE</a></td>
 </tr>
 
 @endforeach
 </table>
 </div>
  <div class="col col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+ <br><br>
+ <div style="text-align:right"><button id="hide" class="btn btn-outline-light" onclick="window.print()">Print</button></div>
 </div>
 </div>
 </div>

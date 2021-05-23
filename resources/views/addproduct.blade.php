@@ -98,7 +98,7 @@ body {
 </tr>
 <tr>
     <td></td>
-    <td> <button class="btn btn-secondary" id="ip4">Add</button></td>
+    <td> <button class="btn btn-outline-secondary" id="ip4">Add</button></td>
     
  </tr>
 

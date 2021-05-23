@@ -24,7 +24,7 @@
 <div class="row">
 <div class="col col-12 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1 ">
  </div>
- <div class="col col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9 ">
+ <div class="col col-12 col-sm-11 col-md-11 col-lg-11 col-xl-11 col-xxl-11 ">
  <br><br>
  <table class="table  table-success table-striped">
  <tr>
@@ -57,8 +57,6 @@
  @endforeach
  </table>
  </div>
- <div class="col col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-</div>
 </div>
 </div>
 @endsection

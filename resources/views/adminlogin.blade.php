@@ -175,7 +175,7 @@
         <div class="col-md-5 intro-section">
           <div class="intro-content-wrapper">
             <div class="brand-wrapper">
-            <br> <br> <br> <br> <br> <br> <br> 
+            <br> <br> <br> <br> <br> <br> <br> <br> 
            
               <img src="images/logo8.png" alt="logo" class="logo"><br><br>
               <img src="images/logo5.png" alt="logo" class="logo">
@@ -199,11 +199,11 @@
             @endif
                 <div class="form-group">
                   <label for="email" class="sr-only">Username</label>
-                  <input type="text" name="usname" id="email" class="form-control" placeholder="Username" required>
+                  <input type="text" style="font-size:18px;color:grey;" name="usname" id="email" class="form-control" placeholder="Username" required>
                 </div>
                 <div class="form-group">
                   <label for="password" class="sr-only">Password</label>
-                  <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+                  <input type="password" style="font-size:18px;color:grey;" name="password" id="password" class="form-control" placeholder="Password" required>
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
                   <input name="login" id="login" class="btn login-btn" type="submit" value="Login">

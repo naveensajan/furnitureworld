@@ -247,7 +247,7 @@
         <div class="col-md-5 intro-section">
           <div class="intro-content-wrapper">
             <div class="brand-wrapper">
-            <br> <br> <br> <br> <br> 
+            <br> <br> <br> <br> 
             </div>
           <h5>Welcome to</h5><h5 class="intro-title" style="color: #da2128;"> Furniture World !</h5>
             <p class="intro-text">Don't have an account? Sign up</p>
@@ -256,7 +256,7 @@
         </div>
         <div class="col-md-5 form-secion ">
           <div class="login-wrapper">
-          <br> <br> <br> <br> <br> 
+          <br> <br> <br> <br> 
             <h2 class="login-title">Log in</h2>
             <br>
             <form action="/userlogs" method="post" >
@@ -269,11 +269,11 @@
             @endif
                 <div class="form-group">
                   <label for="email" class="sr-only">Username</label>
-                  <input type="text" name="usname" id="email" class="form-control" placeholder="Username" required>
+                  <input type="text" style="font-size:18px;color:grey;" name="usname" id="email" class="form-control" placeholder="Username" required>
                 </div>
                 <div class="form-group">
                   <label for="password" class="sr-only">Password</label>
-                  <input type="password" name="upass" id="password" class="form-control" placeholder="Password" required>
+                  <input type="password" style="font-size:18px;color:grey;" name="upass" id="password" class="form-control" placeholder="Password" required>
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
                   <input name="login" id="login" class="btn login-btn" type="submit" value="Login">

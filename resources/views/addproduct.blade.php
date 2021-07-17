@@ -82,8 +82,8 @@ body {
  </tr>
  <tr>
      <td><center>Furniture Price</center></td>
-     <td><input name="FurniturePrice"   type="text" class="form-control" placeholder="Furniture Price" required>
-
+     <td><input name="FurniturePrice" value="{{old('FurniturePrice')}}"  type="text" class="form-control" placeholder="Furniture Price" required>
+     <span class="text-danger">@error('FurniturePrice'){{$message}} @enderror  </span>
      </td>
  </tr>
  <tr>

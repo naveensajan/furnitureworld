@@ -86,6 +86,7 @@ class productController extends Controller
     {
         $this->validate($request,[
             'FurnitureId' => 'unique:App\Models\productmodel,FurnitureId',
+            'FurniturePrice' => 'required|integer'
         ]); 
 
         $getFurnitureCategory=request('FurnitureCategory');

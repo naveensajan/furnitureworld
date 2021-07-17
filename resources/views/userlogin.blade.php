@@ -267,12 +267,11 @@
             {{Session::get('fail')}}
             </div>
             @endif
+            
                 <div class="form-group">
-                  <label for="email" class="sr-only">Username</label>
                   <input type="text" style="font-size:18px;color:grey;" name="usname" id="email" class="form-control" placeholder="Username" required>
                 </div>
                 <div class="form-group">
-                  <label for="password" class="sr-only">Password</label>
                   <input type="password" style="font-size:18px;color:grey;" name="upass" id="password" class="form-control" placeholder="Password" required>
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
